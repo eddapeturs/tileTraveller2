@@ -6,7 +6,9 @@ WEST = 'w'
 
 def move(direction, col, row):
     ''' Returns updated col, row given the direction 
-    this is a comment helloooo '''
+    this is a comment helloooo
+    very nice comment'''
+    
     if direction == NORTH:
         row += 1
     elif direction == SOUTH:
