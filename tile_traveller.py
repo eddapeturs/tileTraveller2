@@ -60,6 +60,10 @@ def find_directions(col, row):
         valid_directions = SOUTH+WEST
     return valid_directions
 
+def print_col_row(col, row):
+    print("Col: ", col)
+    print("Row: ", row)
+
 def play_one_move(col, row, valid_directions):
     ''' Plays one move of the game
         Return if victory has been obtained and updated col,row '''
@@ -71,6 +75,7 @@ def play_one_move(col, row, valid_directions):
         print("Not a valid direction!")
     else:
         col, row = move(direction, col, row)
+        print_col_row(col, row)
         victory = is_victory(col, row)
     return victory, col, row
 
