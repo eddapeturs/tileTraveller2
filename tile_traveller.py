@@ -63,6 +63,9 @@ def find_directions(col, row):
 def print_col_row(col, row):
     print("Col: ", col)
     print("Row: ", row)
+    
+def foo(x, y):
+    return y,x
 
 def play_one_move(col, row, valid_directions):
     ''' Plays one move of the game
