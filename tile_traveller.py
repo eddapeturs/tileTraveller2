@@ -60,6 +60,9 @@ def find_directions(col, row):
         valid_directions = SOUTH+WEST
     return valid_directions
 
+def foo(x, y):
+    return y,x
+
 def play_one_move(col, row, valid_directions):
     ''' Plays one move of the game
         Return if victory has been obtained and updated col,row '''
